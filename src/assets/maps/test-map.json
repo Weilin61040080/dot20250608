@@ -1,0 +1,200 @@
+{
+  "moduleId": "module-test",
+  "mapId": "test-map-1",
+  "name": "Test Map",
+  "theme": "classroom",
+  "dimensions": {
+    "width": 20,
+    "height": 15
+  },
+  "layers": [
+    {
+      "id": "layer-background",
+      "name": "Background",
+      "type": "background",
+      "visible": true,
+      "data": [
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+      ]
+    },
+    {
+      "id": "layer-walls",
+      "name": "Walls",
+      "type": "interactive",
+      "visible": true,
+      "data": [
+        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2],
+        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+      ]
+    },
+    {
+      "id": "layer-objects",
+      "name": "Objects",
+      "type": "foreground",
+      "visible": true,
+      "data": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      ]
+    }
+  ],
+  "tilesets": [
+    {
+      "id": "tileset-1",
+      "name": "Basic Tiles",
+      "tiles": [
+        {
+          "id": 0,
+          "type": "empty",
+          "properties": {
+            "walkable": true,
+            "interactable": false,
+            "triggerScriptId": null,
+            "assetPath": "maps/test-map/tiles/empty.png"
+          }
+        },
+        {
+          "id": 1,
+          "type": "floor",
+          "properties": {
+            "walkable": true,
+            "interactable": false,
+            "triggerScriptId": null,
+            "assetPath": "maps/test-map/tiles/floor.png"
+          }
+        },
+        {
+          "id": 2,
+          "type": "wall",
+          "properties": {
+            "walkable": false,
+            "interactable": false,
+            "triggerScriptId": null,
+            "assetPath": "maps/test-map/tiles/wall.png"
+          }
+        },
+        {
+          "id": 3,
+          "type": "object",
+          "properties": {
+            "walkable": false,
+            "interactable": true,
+            "triggerScriptId": "examine-object",
+            "assetPath": "maps/test-map/objects/computer_broken.png"
+          }
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "id": "npc-1",
+      "name": "AI Teacher",
+      "position": {
+        "x": 5,
+        "y": 5
+      },
+      "spriteId": "npc-1",
+      "movementPattern": "static",
+      "dialogueScriptId": "npc-1-dialogue",
+      "interactionRadius": 1,
+      "assetPath": "maps/test-map/npcs/npc-1.png"
+    },
+    {
+      "id": "npc-2",
+      "name": "Student",
+      "position": {
+        "x": 15,
+        "y": 10
+      },
+      "spriteId": "npc-2",
+      "movementPattern": "static",
+      "dialogueScriptId": "npc-2-dialogue",
+      "interactionRadius": 1,
+      "assetPath": "maps/test-map/npcs/npc-2.png"
+    },
+    {
+      "id": "npc-3",
+      "name": "AI Researcher",
+      "position": {
+        "x": 3,
+        "y": 10
+      },
+      "spriteId": "npc-3",
+      "movementPattern": "static",
+      "dialogueScriptId": "npc-3-dialogue",
+      "interactionRadius": 1,
+      "assetPath": "maps/test-map/npcs/npc-3.png"
+    },
+    {
+      "id": "npc-4",
+      "name": "ChatBot",
+      "position": {
+        "x": 13,
+        "y": 5
+      },
+      "spriteId": "npc-4",
+      "movementPattern": "static",
+      "dialogueScriptId": "npc-4-dialogue",
+      "interactionRadius": 1,
+      "assetPath": "maps/test-map/npcs/npc-4.png"
+    }
+  ],
+  "triggers": [
+    {
+      "id": "trigger-1",
+      "position": {
+        "x": 10, 
+        "y": 7
+      },
+      "type": "interaction",
+      "scriptId": "trigger-welcome",
+      "oneTime": true,
+      "activated": false
+    }
+  ],
+  "spawnPoint": {
+    "x": 10,
+    "y": 12
+  }
+} 

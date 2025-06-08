@@ -1,0 +1,191 @@
+{
+  "moduleId": "module-test",
+  "mapId": "map-test",
+  "name": "Test Map",
+  "theme": "classroom",
+  "dimensions": {
+    "width": 15,
+    "height": 10
+  },
+  "layers": [
+    {
+      "id": "layer-background",
+      "name": "Floor and Walls",
+      "type": "background",
+      "visible": true,
+      "data": [
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+        [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+        [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+        [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+        [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+        [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+        [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+        [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+      ]
+    },
+    {
+      "id": "layer-objects",
+      "name": "Classroom Objects",
+      "type": "interactive",
+      "visible": true,
+      "data": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 4, 4, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 6, 6, 0, 0, 0, 0, 0, 0, 7, 7, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      ]
+    },
+    {
+      "id": "layer-foreground",
+      "name": "Decorative Elements",
+      "type": "foreground",
+      "visible": true,
+      "data": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      ]
+    }
+  ],
+  "tilesets": [
+    {
+      "id": "tileset-classroom",
+      "name": "Classroom Tiles",
+      "tiles": [
+        {
+          "id": 0,
+          "type": "empty",
+          "properties": {
+            "walkable": true,
+            "interactable": false,
+            "triggerScriptId": null,
+            "assetPath": "empty.png"
+          }
+        },
+        {
+          "id": 1,
+          "type": "wall",
+          "properties": {
+            "walkable": false,
+            "interactable": false,
+            "triggerScriptId": null,
+            "assetPath": "assets/tiles/classroom/wall.png"
+          }
+        },
+        {
+          "id": 2,
+          "type": "floor",
+          "properties": {
+            "walkable": true,
+            "interactable": false,
+            "triggerScriptId": null,
+            "assetPath": "assets/tiles/classroom/floor.png"
+          }
+        },
+        {
+          "id": 3,
+          "type": "object",
+          "properties": {
+            "walkable": false,
+            "interactable": true,
+            "triggerScriptId": "script-desk",
+            "assetPath": "assets/tiles/classroom/desk.png"
+          }
+        },
+        {
+          "id": 4,
+          "type": "object",
+          "properties": {
+            "walkable": false,
+            "interactable": true,
+            "triggerScriptId": "script-bookshelf",
+            "assetPath": "assets/tiles/classroom/bookshelf.png"
+          }
+        },
+        {
+          "id": 5,
+          "type": "object",
+          "properties": {
+            "walkable": false,
+            "interactable": true,
+            "triggerScriptId": "script-computer",
+            "assetPath": "assets/tiles/classroom/computer.png"
+          }
+        },
+        {
+          "id": 6,
+          "type": "object",
+          "properties": {
+            "walkable": false,
+            "interactable": true,
+            "triggerScriptId": "script-chair",
+            "assetPath": "assets/tiles/classroom/chair.png"
+          }
+        },
+        {
+          "id": 7,
+          "type": "object",
+          "properties": {
+            "walkable": false,
+            "interactable": true,
+            "triggerScriptId": "script-board",
+            "assetPath": "assets/tiles/classroom/board.png"
+          }
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "id": "npc-teacher",
+      "name": "Teacher",
+      "position": { "x": 7, "y": 3 },
+      "spriteId": "teacher",
+      "movementPattern": "static",
+      "dialogueScriptId": "dialogue-teacher",
+      "interactionRadius": 1
+    },
+    {
+      "id": "npc-student",
+      "name": "Student",
+      "position": { "x": 3, "y": 7 },
+      "spriteId": "student",
+      "movementPattern": "patrol",
+      "patrolPath": [
+        { "x": 3, "y": 7 },
+        { "x": 7, "y": 7 },
+        { "x": 7, "y": 5 },
+        { "x": 3, "y": 5 }
+      ],
+      "dialogueScriptId": "dialogue-student",
+      "interactionRadius": 1
+    }
+  ],
+  "triggers": [
+    {
+      "id": "trigger-entrance",
+      "position": { "x": 7, "y": 8 },
+      "type": "proximity",
+      "scriptId": "script-classroom-entrance",
+      "oneTime": true,
+      "activated": false
+    }
+  ],
+  "spawnPoint": { "x": 7, "y": 7 }
+} 

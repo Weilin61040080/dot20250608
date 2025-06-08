@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #log {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      min-height: 300px;
+      max-height: 500px;
+      overflow-y: auto;
+      margin-top: 20px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+    .key-pressed {
+      color: green;
+      font-weight: bold;
+    }
+    .key-released {
+      color: red;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .info {
+      background-color: #e6f7ff;
+      padding: 10px;
+      border-radius: 5px;
+      border-left: 4px solid #1890ff;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Keyboard Input Test</h1>
+  
+  <div class="info">
+    <p>Use this page to test your keyboard inputs. Any key you press will be logged below.</p>
+    <p>This can help identify issues with keyboard input handling in the game.</p>
+    <p><strong>Important keys to test:</strong> Arrow keys, Space, Enter, E key</p>
+  </div>
+  
+  <h2>Key Events:</h2>
+  <button onclick="clearLog()">Clear Log</button>
+  <div id="log"></div>
+
+  <script>
+    const logElement = document.getElementById('log');
+    
+    function logKey(event, type) {
+      const timestamp = new Date().toLocaleTimeString();
+      const keyInfo = `Key: ${event.key} | Code: ${event.code} | KeyCode: ${event.keyCode}`;
+      const className = type === 'keydown' ? 'key-pressed' : 'key-released';
+      
+      logElement.innerHTML += `<div class="${className}">[${timestamp}] ${type.toUpperCase()}: ${keyInfo}</div>`;
+      logElement.scrollTop = logElement.scrollHeight;
+    }
+    
+    window.addEventListener('keydown', function(event) {
+      logKey(event, 'keydown');
+    });
+    
+    window.addEventListener('keyup', function(event) {
+      logKey(event, 'keyup');
+    });
+    
+    function clearLog() {
+      logElement.innerHTML = '';
+    }
+  </script>
+</body>
+</html> 
